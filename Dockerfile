@@ -15,7 +15,11 @@ WORKDIR /usr/src/app
 # Copy the C++ project files
 COPY . .
 
+#Create build Dir
+RUN mkdir build
+
 # Run CMake and build the project
+WORKDIR /app/build
 RUN cmake . && make
 
 # Run the application
