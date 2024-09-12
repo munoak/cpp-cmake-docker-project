@@ -3,4 +3,4 @@ image:
 
 tasks:
   - init: cmake .
-  - command: make && ./DockerizedCPP
+  - command: make && ./main

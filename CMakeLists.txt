@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.0)
 project(pre_interview VERSION 0.1.0 LANGUAGES C CXX)
 
-add_executable(pre_interview main.cpp)
+add_executable(main main.cpp)
 

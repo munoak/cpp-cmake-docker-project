@@ -19,4 +19,4 @@ COPY . .
 RUN cmake . && make
 
 # Run the application
-CMD ["./DockerizedCPP"]
+CMD ["./main"]
