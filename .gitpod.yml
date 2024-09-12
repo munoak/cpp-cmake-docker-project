@@ -1,0 +1,6 @@
+image:
+  file: Dockerfile  # Link to Dockerfile
+
+tasks:
+  - init: cmake .
+  - command: make && ./DockerizedCPP
