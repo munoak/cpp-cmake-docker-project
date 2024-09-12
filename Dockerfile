@@ -10,16 +10,12 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy the C++ project files
 COPY . .
 
-#Create build Dir
-RUN mkdir build
-
 # Run CMake and build the project
-WORKDIR /app/build
 RUN cmake . && make
 
 # Run the application
